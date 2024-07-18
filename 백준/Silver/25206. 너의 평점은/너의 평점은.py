@@ -5,7 +5,7 @@ tot_credit = 0
 tot_score = 0
 
 for i in range(20):
-    a = list(map(str, input().split()))
+    a = input().split()
     credit = float(a[1])
     if a[2] == 'P':
         continue
