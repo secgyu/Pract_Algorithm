@@ -3,10 +3,9 @@ input = sys.stdin.readline
 
 
 def calinder(M, N, x, y):
-    while x <= M * N:
-        if (x - y) % N == 0:
-            return x
-        x = x + M
+    for i in range(x, M*N+1, M):
+        if (i-y) % N == 0:
+            return i
     return -1
 
 
