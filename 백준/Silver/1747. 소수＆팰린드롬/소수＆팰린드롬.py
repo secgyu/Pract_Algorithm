@@ -15,14 +15,9 @@ for i in range(2, int(math.sqrt(len(A)))+1):
 def isPalindrom(target):
     tmp = str(target)
     return tmp == tmp[::-1]
-        
 
 
-i = N
-while True:
-    if A[i] != 0:
-        result = A[i]
-        if (isPalindrom(result)):
-            print(result)
-            break
-    i += 1
+for i in range(N, len(A)):
+    if A[i] != 0 and (isPalindrom(A[i])):
+        print(A[i])
+        break
