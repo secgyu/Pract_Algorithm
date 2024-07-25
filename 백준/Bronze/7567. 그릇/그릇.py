@@ -1,4 +1,4 @@
-dish = input().strip()
+dish = input()
 
 total_height = 10
 
